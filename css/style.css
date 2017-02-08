@@ -1,0 +1,121 @@
+.u-clearfix:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.left{
+	float:right;
+}
+.saveForm{
+    position: absolute;
+    top:50%;
+    left:calc(100% - (50vw + 250px));
+    width:500px;
+    background: rgb(30,30,30);
+    padding: 50px 10px;
+    color:white;
+}
+.saveForm button,input{
+    margin-left: 10px;
+}
+.colorPicker{
+	width:auto;
+    display: inline-block;
+    position: absolute;
+    right:-100px;
+    top:-50px;
+/*    background: rgb(80,80,80);*/
+    padding:5px;
+    margin:0 auto;
+}
+.colorPickerIcon{
+    position: absolute;
+    color: white;
+    top:-20px;
+    right:-25px;
+    width:10px;
+    height: 10px;
+}
+.colorPick{
+    width:30px;
+    height: 30px;
+    margin:10px 5px;
+    border-radius: 30px;
+    border:1px solid black;
+}
+.nav-controllsSection{
+    margin-left:50px;
+    display: inline;
+}
+.nav-controllsSection>button{
+    margin-left:10px;
+}
+#canvas{
+	width:100vw;
+	height: 100vh;
+	background: #808080;
+	position: absolute;
+}
+#popUp{
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 50;
+}
+.nav-button{
+	height: 30px;
+	padding:0 15px;
+	margin:22px 0 0 50px;
+	background: rgb(52, 104, 188);
+    color:white;
+	border-top:1px solid rgb(100, 104, 220);
+	border-left:1px solid rgb(100, 104, 220);
+	border-right:1px solid rgb(100, 104, 220);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-container{
+	width:100%;
+	height: 50px;
+	border:1px solid black;
+	z-index: 5;
+	position: fixed;
+	background: white;
+}
+/*
+.color{
+	width:30px;
+	height: 30px;
+    border: 1px solid black;
+}
+*/
+.controller{
+    width:10px;
+    height: 10px;
+    position: absolute;
+    background: white;
+    border:1px solid black;
+}
+.tl{
+    left:-5px;
+    top:-5px;
+    cursor: nw-resize;
+}
+.tr{
+    right:-5px;
+    top:-5px;
+    cursor: ne-resize;
+}
+.bl{
+    left:-5px;
+    bottom:-5px;
+    cursor: sw-resize;
+}
+.br{
+    right:-5px;
+    bottom:-5px;
+    cursor: se-resize;
+}
